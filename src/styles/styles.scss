@@ -1,0 +1,11 @@
+@import './base/settings'; //setting needs to come first so that the header can the base can get the val that define in the settings
+@import './base/base';
+@import './components/header';
+@import './components/container';
+@import './components/button';
+@import './components/widget';
+@import './components/addoptions';
+@import './components/option';
+@import './components/modal';
+
+//when import leave the [_] and the extension file name

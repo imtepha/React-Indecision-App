@@ -1,0 +1,38 @@
+.big-button{
+    background: $purple;
+    border: none;
+    border-bottom: .6rem solid darken($purple, 10%);//making button 3d google it sass refernce function
+    color: white;//color for text
+    font-weight: bold;
+    font-size: $l-size;
+    margin-bottom: $m-size;//the blank space between the button and each component
+    width:100%;// enlarge the button 100% the same big as the container
+    padding:2.4rem;//enlarge the space between the label inside the button and the button it self
+}
+
+.big-button:disabled {
+    opacity: 0.5;
+}// when no option is being put the button will has a diff style
+
+.button{
+    background-color: $purple;
+    border: none;
+    border-bottom: .3rem solid darken($purple, 10%);   
+    color: white;
+    font-weight: 500;
+    padding: $s-size;
+}
+
+//modification of button block
+.button--link{
+    background: none;
+    border: none;
+    color: $off-white;
+    padding: 0;
+}
+
+@media(min-width:$desktop-breakpoint){
+    .big-button{
+        margin-bottom: $xl-size;
+    }
+}

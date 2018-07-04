@@ -1,0 +1,36 @@
+//small screen
+.add-option-error{
+    color:$off-white;
+    font-style: italic;
+    padding: 0 $m-size; //0 for bottom and uppper m-szie for left right
+    margin:$m-size 0 0 0;    
+}
+
+.add-option{
+    display:flex;
+    flex-direction: column;
+    //stack thing vertically
+    padding: $m-size;
+}
+
+.add-option__input{
+    flex-grow: 1;
+    border: none;
+    color:$off-white;
+    border-bottom: .3rem solid darken($off-darkblue, 10%);
+    background: $off-darkblue;
+    margin: 0 0 $s-size 0;
+    //margin-right: $s-size;
+    padding: $s-size;
+}
+
+//mobile min width is the limitation so from 45rem to infinite rem width used this style (big screen)
+//media query css feature
+@media(min-width:$desktop-breakpoint){
+    .add-option{
+        flex-direction: row;
+    }
+    .add-option__input{
+        margin: 0 $s-size 0 0;
+    }
+}

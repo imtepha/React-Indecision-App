@@ -1,0 +1,18 @@
+html {
+    font-size: 62.5%;
+    //changing the coversion for rem cause 1rem = 16px, thus using this we convert the rem into nase 10
+}
+
+body {
+    background: $off-darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:  $m-size;
+}
+
+button {
+    cursor: pointer;
+}//targettting all button if there is a option inside it will appear as hand
+
+button:disabled{
+    cursor:default;
+}// if nothing insert into option all cursor will appear as default
